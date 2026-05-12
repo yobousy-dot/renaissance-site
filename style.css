@@ -132,3 +132,28 @@ body {
   color: #f9f3e8;
   font-size: 0.9rem;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  gap: 20px; /* espace entre les images */
+  max-width: 900px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto; /* garde les proportions */
+  object-fit: contain; /* affiche l’image entière */
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* animation douce */
+}
+
+.gallery img:hover {
+  transform: scale(1.20); /* zoom léger */
+}
