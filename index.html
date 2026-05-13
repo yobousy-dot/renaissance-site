@@ -2,84 +2,188 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Renaissance – Voyage culturel</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header class="top-bar">
-  <img src="monlogo.jpeg" class="logo">
-  <h1>Renaissance</h1>
-  <nav>
-    <a href="#intro">Introduction</a>
-    <a href="#galerie">Galerie</a>
-    <a href="#artistes">Artistes</a>
-  </nav>
-</header>
+    <img src="monlogo.jpeg" class="logo" alt="Logo Renaissance">
+    <h1>Renaissance</h1>
+    <nav>
+      <a href="#intro">Introduction</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#artistes">Artistes</a>
+    </nav>
+  </header>
 
   <section class="hero">
     <div class="hero-text">
-      <h2>Un voyage au cœur de la Renaissance</h2>
+      <span class="hero-label">XIV<sup>e</sup> – XVI<sup>e</sup> siècle</span>
+      <h2>Un voyage au cœur<br>de la Renaissance</h2>
       <p>
-        Redécouvre une époque de lumière, d’art et de savoir, 
-        où l’être humain et la beauté sont au centre du monde.
+        Redécouvre une époque de lumière, d'art et de savoir, 
+        où l'être humain et la beauté sont au centre du monde.
       </p>
+      <a href="#intro" class="hero-btn">Explorer</a>
     </div>
     <div class="hero-image">
-      <img src="larenaissance.png">
+      <img src="larenaissance.png" alt="La Renaissance">
     </div>
   </section>
 
   <section id="intro" class="section">
-    <h3>Qu’est-ce que la Renaissance ?</h3>
-    <p>
-      La Renaissance est une période de renouveau artistique, scientifique et culturel, 
-      qui commence en Italie au XIV<sup>e</sup> siècle et se diffuse dans toute l’Europe.
-    </p>
+    <div class="section-inner">
+      <h3>Qu'est-ce que la Renaissance ?</h3>
+      <p>
+        La Renaissance est une période de renouveau artistique, scientifique et culturel, 
+        qui commence en Italie au XIV<sup>e</sup> siècle et se diffuse dans toute l'Europe.
+        Ce mouvement place l'humain au cœur de sa réflexion — c'est l'humanisme —, 
+        et renoue avec les idéaux de l'Antiquité grecque et romaine.
+      </p>
+    </div>
   </section>
 
-  <section id="galerie" class="section">
-    <h3>Galerie d’images</h3>
-    <div class="gallery">
-      <figure>
-        <img src="wafa-david.png">
-        <figcaption> "Fafou", le bronze moderne au style affirmé, rencontre le "David" de Michel-Ange (1504), chef-d'œuvre de la Renaissance et symbole absolu de la perfection anatomique, pour un dialogue amoureux entre force classique et élégance contemporaine..</figcaption>
-      </figure>
-      <figure>
-        <img src="joconde.png">
-        <figcaption>« La Joconde » de Léonard de Vinci. Portrait célèbre pour son sourire mystérieux et sa technique du sfumato, emblème du génie de la Renaissance.</figcaption>
-      </figure>
-      <figure>
-        <img src="couple.jpg" alt="Fresque">
-        <figcaption> Détail du « Portrait des époux Arnolfini » de Jan van Eyck (1434). Une scène emblématique de la peinture flamande, célèbre pour sa précision, ses symboles et son réalisme minutieux.</figcaption>
-      </figure>
-      <figure>
-        <img src="jl.jpeg">
-        <figcaption>« Jean Luc », chef‑d’œuvre de sa maman (1973). Un Portrait intemporel du classicisme, incarnation d’élégance, d’équilibre et de virtuosité artistique.</figcaption>
-      </figure>
+  <section id="galerie" class="section section-dark">
+    <div class="section-inner">
+      <h3>Galerie d'images</h3>
+      <p class="section-sub">Cliquez sur les cœurs pour écouter une musique d'ambiance.</p>
+      <div class="gallery">
 
+        <figure>
+          <div class="fig-img-wrap">
+            <img src="wafa-david.png" alt="Fafou et David">
+            <button class="play-btn" data-son="son1" aria-label="Écouter musique 1">
+              ❤️<span class="heart-trail"></span>
+            </button>
+          </div>
+          <figcaption>
+            <strong>Fafou & David</strong><br>
+            Le bronze moderne au style affirmé rencontre le "David" de Michel-Ange (1504), dialogue amoureux entre force classique et élégance contemporaine.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="fig-img-wrap">
+            <img src="deb.png" alt="Déborah">
+            <button class="play-btn" data-son="son2" aria-label="Écouter musique 2">
+              💙<span class="heart-trail"></span>
+            </button>
+          </div>
+          <figcaption>
+            <strong>DEBORAH</strong><br>
+            La Joie Gourmande (vers 2026)  
+Marbre blanc, style Renaissance.
+Cette statue représente une femme rieuse aux ailes d’ange, symbole de joie et de vitalité.
+Son rire, tourné vers le ciel, évoque la célébration du plaisir simple et spirituel.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="fig-img-wrap">
+            <img src="yo.png" alt="YOHANNA">
+            <button class="play-btn" data-son="son3" aria-label="Écouter musique 3">
+              💚<span class="heart-trail"></span>
+            </button>
+          </div>
+          <figcaption>
+            <strong>YOHANNA</strong><br>
+            Portrait de Dame Yohanna en Loge d’Opéra  
+Huile sur toile, vers 1560.
+École florentine.
+
+Cette représentation de Yohanna, célèbre pour son sourire malicieux et son élégance naturelle, la montre installée dans une loge dorée, prête à juger l’opéra… ou le public..
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="fig-img-wrap">
+            <img src="jl.jpeg" alt="Jean Luc">
+            <button class="play-btn" data-son="son4" aria-label="Écouter musique 4">
+              💜<span class="heart-trail"></span>
+            </button>
+          </div>
+          <figcaption>
+            <strong>Jean Luc</strong> — chef‑d'œuvre de sa maman (1973)<br>
+            Portrait intemporel du classicisme, incarnation d'élégance, d'équilibre et de virtuosité artistique.
+          </figcaption>
+        </figure>
+
+      </div>
     </div>
   </section>
 
   <section id="artistes" class="section">
-    <h3>Quelques grandes figures</h3>
-    <div class="cards">
-      <article class="card">
-        <h4>Léonard de Vinci</h4>
-        <p>Peintre, inventeur, scientifique. Auteur de la Joconde.</p>
-      </article>
-      <article class="card">
-        <h4>Michel-Ange</h4>
-        <p>Sculpteur et peintre, auteur du David et de la chapelle Sixtine.</p>
-      </article>
-      <article class="card">
-        <h4>Raphaël</h4>
-        <p>Maître de l’harmonie et de la douceur.</p>
-      </article>
+    <div class="section-inner">
+      <h3>Quelques grandes figures</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">✦</div>
+          <h4>Léonard de Vinci</h4>
+          <p>Peintre, inventeur, scientifique. Auteur de la Joconde et de nombreuses machines visionnaires.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">✦</div>
+          <h4>Michel-Ange</h4>
+          <p>Sculpteur et peintre, auteur du David et des fresques immortelles de la chapelle Sixtine.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">✦</div>
+          <h4>Raphaël</h4>
+          <p>Maître de l'harmonie, de la douceur et de la composition équilibrée. Auteur de L'École d'Athènes.</p>
+        </article>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>Petite application d’apprentissage – Thème : Renaissance</p>
+    <p>Petite application d'apprentissage &mdash; Thème : <em>Renaissance</em></p>
   </footer>
+
+  <!-- Audio -->
+  <audio id="son1" src="Miroir Florence.mp3"></audio>
+  <audio id="son2" src="deb.mp3"></audio>
+  <audio id="son3" src="yo.mpeg"></audio>
+  <audio id="son4" src="jeanluc.mp3"></audio>
+
+  <script>
+    const boutons = document.querySelectorAll(".play-btn");
+    let heartIntervals = {};
+
+    boutons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const idSon = btn.getAttribute("data-son");
+        const audio = document.getElementById(idSon);
+const estEnCoursDeJeu = !audio.paused; 
+        // Stopper tout
+        document.querySelectorAll("audio").forEach(a => a.pause());
+        boutons.forEach(b => {
+          b.classList.remove("active");
+          clearInterval(heartIntervals[b.dataset.son]);
+          const trail = b.querySelector(".heart-trail");
+          if (trail) trail.innerHTML = "";
+        });
+if (!estEnCoursDeJeu) {
+          audio.currentTime = 0;
+          audio.play();
+          btn.classList.add("active");
+
+          const trail = btn.querySelector(".heart-trail");
+          const emoji = btn.textContent.trim().charAt(0);
+
+          heartIntervals[idSon] = setInterval(() => {
+            const mini = document.createElement("span");
+            mini.textContent = emoji;
+            trail.appendChild(mini);
+            setTimeout(() => mini.remove(), 1000);
+         }, 400);
+        }      // ← fermeture du if
+      });      // ← fermeture du addEventListener
+    });        // ← fermeture du forEach
+
+  </script>
+
 </body>
 </html>
